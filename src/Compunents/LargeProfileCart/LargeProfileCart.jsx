@@ -1,25 +1,20 @@
-import { useEffect, useState } from "react";
 import SectionBanner from "../SectionBanner/SectionBanner";
 import Cart from "../Cart/Cart";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import useUsers from "../../hooks/useUsers";
 
 // TODO: show all button not working
 
 const LargeProfileCart = ({ category }) => {
+  const navigate = useNavigate();
   const { serviceProviderType, serviceImg, shortDescription } = category;
-  const [user, setUser] = useState([]);
+  const [users] = useUsers();
 
-  useEffect(() => {
-    fetch("users.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const allRequireUser = data.filter(
-          (item) => item.category === serviceProviderType
-        );
-        const requireUser = allRequireUser.slice(0, 8);
-        setUser(requireUser);
-      });
-  }, [serviceProviderType]);
+  const allRequireUser = users.filter(
+    (item) => item.category === serviceProviderType
+  );
+  const requireUser = allRequireUser.slice(0, 8);
+
   return (
     <div className="text-dark-900 dark:text-white">
       <div className="mb-10 md:mb-16 lg:mb-20">
@@ -30,17 +25,17 @@ const LargeProfileCart = ({ category }) => {
         ></SectionBanner>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {user.map((user) => (
+        {requireUser.map((user) => (
           <Cart key={user._id} user={user}></Cart>
         ))}
       </div>
       <div className="mx-auto text-center mt-12">
-        <Link
-          to="/providers"
+        <button
+          onClick={() => navigate(`/providers/${serviceProviderType}`)}
           className="btn btn-outline btn-success border-0 border-b-4 lg:mb-20 md:mb-16 mb-8"
         >
           Show all
-        </Link>
+        </button>
       </div>
     </div>
   );

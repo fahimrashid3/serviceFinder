@@ -12,3 +12,4 @@ firebase
 sweetalert2
 react-rating from reach awesomeComponents
 react-parallax
+react-tabs awesomeComponents

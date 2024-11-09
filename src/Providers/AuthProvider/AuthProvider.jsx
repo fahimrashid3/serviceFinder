@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
@@ -55,7 +54,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       // console.log("current User", currentUser);
       if (currentUser) {
-        // todo:get token and store client site
+        // TODO:get token and store client site
         const userinfo = { email: currentUser.email };
         axiosPublic.post("/jwt", userinfo).then((res) => {
           if (res.data.token) {
@@ -63,7 +62,7 @@ const AuthProvider = ({ children }) => {
           }
         });
       } else {
-        // todo :remove token
+        // TODO :remove token
         localStorage.removeItem("access-token");
       }
       setLoading(false);

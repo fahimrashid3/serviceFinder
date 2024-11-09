@@ -111,6 +111,7 @@ const Registration = () => {
               />
               {errors.name && <span>This field is required</span>}
             </div>
+            {/* TODO: use photo hosting to upload photo */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Photo Url</span>
@@ -203,7 +204,7 @@ const Registration = () => {
           </form>
           <div className="space-y-5">
             <p className="text-[#D1A054] text-lg text-center">
-              Already registered?{" "}
+              Already registered?
               <span className="font-semibold">
                 <Link to="/login">Go to log in</Link>
               </span>

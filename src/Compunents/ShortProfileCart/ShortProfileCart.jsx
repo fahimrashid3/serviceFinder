@@ -1,5 +1,5 @@
-const ShortProfileCart = ({ service }) => {
-  const { name, userImg, qualification, category, rating } = service;
+const ShortProfileCart = ({ user }) => {
+  const { name, userImg, qualification, category, rating } = user;
   return (
     <div
       onClick={() => {

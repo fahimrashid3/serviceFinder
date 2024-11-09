@@ -10,6 +10,8 @@ import ContactUs from "../Pages/ContactUs/ContactUs/ContactUs";
 import Appointment from "../Pages/Appointment/Appointment/Appointment";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 import AllProviders from "../Pages/AllProviders/AllProviders/AllProviders";
+import FullProfile from "../Pages/Profile/FullProfile/FullProfile";
+import ShortProfile from "../Pages/Profile/ShortProfile/ShortProfile";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/providers/:category",
         element: <AllProviders />,
+      },
+      {
+        path: "/shortProfile/:_id",
+        element: <ShortProfile />,
+      },
+      {
+        path: "/fullProfile/:_id",
+        element: <FullProfile />,
       },
     ],
   },

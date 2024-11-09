@@ -1,401 +1,493 @@
 [
-    {
-      "_id": 1,
-      "name": "Dr. Ayesha Rahman",
-      "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
-      "qualification": "MBBS, FCPS",
-      "category": "Doctor",
-      "rating": 4.8,
-      "location": "Dhaka, Bangladesh",
-      "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
-      "education": [
-        { "degree": "MBBS", "institution": "Dhaka Medical College" },
-        { "degree": "FCPS", "institution": "BSMMU" },
-        { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
-      ],
-      "workingExperience": [
-        "Senior Consultant at Square Hospital",
-        "Assistant Professor at Dhaka Medical College",
-        "Resident Doctor at United Hospital"
-      ],
-      "services": ["General Health Check-up", "Diabetes Management", "Hypertension Management"],
-      "rewards": ["Best Doctor Award - 2019", "Excellence in Patient Care - 2021"],
-      "professionImg": "https://example.com/doctor-profile.png",
-      "contactNumber": "+880123456789",
-      "timeTable": {
-        "Monday": "9 AM - 5 PM",
-        "Tuesday": "9 AM - 5 PM",
-        "Wednesday": "2 PM - 8 PM",
-        "Thursday": "9 AM - 5 PM",
-        "Friday": "9 AM - 1 PM",
-        "Saturday": "Closed",
-        "Sunday": "Closed"
+  {
+    "_id": 1,
+    "name": "Dr. Ayesha Rahman",
+    "email": "lawyer.isabella.clark@example.com",
+    "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
+    "qualification": "MBBS, FCPS",
+    "category": "Doctor",
+    "rating": 4.8,
+    "location": "Dhaka, Bangladesh",
+    "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
+    "education": [
+      { "degree": "MBBS", "institution": "Dhaka Medical College" },
+      { "degree": "FCPS", "institution": "BSMMU" },
+      { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
+    ],
+    "workingExperience": [
+      "Senior Consultant at Square Hospital",
+      "Assistant Professor at Dhaka Medical College",
+      "Resident Doctor at United Hospital"
+    ],
+    "services": [
+      "General Health Check-up",
+      "Diabetes Management",
+      "Hypertension Management"
+    ],
+    "rewards": [
+      "Best Doctor Award - 2019",
+      "Excellence in Patient Care - 2021"
+    ],
+    "professionImg": "https://example.com/doctor-profile.png",
+    "contactNumber": "+880123456789",
+    "timeTable": {
+      "Monday": "9 AM - 5 PM",
+      "Tuesday": "9 AM - 5 PM",
+      "Wednesday": "2 PM - 8 PM",
+      "Thursday": "9 AM - 5 PM",
+      "Friday": "9 AM - 1 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 2,
+    "name": "Prof. Tamim Iqbal",
+    "email": "dr.charles.lee@example.com",
+    "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
+    "qualification": "MSc, PhD",
+    "category": "Teacher",
+    "rating": 4.9,
+    "location": "Sylhet, Bangladesh",
+    "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
+    "education": [
+      { "degree": "BSc in Physics", "institution": "University of Dhaka" },
+      { "degree": "MSc in Physics", "institution": "North South University" },
+      {
+        "degree": "PhD in Theoretical Physics",
+        "institution": "University of Cambridge"
       }
-    },
-    {
-      "_id": 2,
-      "name": "Prof. Tamim Iqbal",
-      "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
-      "qualification": "MSc, PhD",
-      "category": "Teacher",
-      "rating": 4.9,
-      "location": "Sylhet, Bangladesh",
-      "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
-      "education": [
-        { "degree": "BSc in Physics", "institution": "University of Dhaka" },
-        { "degree": "MSc in Physics", "institution": "North South University" },
-        { "degree": "PhD in Theoretical Physics", "institution": "University of Cambridge" }
-      ],
-      "workingExperience": [
-        "Professor at North South University",
-        "Visiting Scholar at MIT",
-        "Research Associate at University of Cambridge"
-      ],
-      "services": ["Physics Tutoring", "Advanced Quantum Mechanics", "Electromagnetism"],
-      "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
-      "professionImg": "https://example.com/teacher-profile.png",
-      "contactNumber": "+880123456787",
-      "timeTable": {
-        "Monday": "8 AM - 4 PM",
-        "Tuesday": "8 AM - 4 PM",
-        "Wednesday": "8 AM - 4 PM",
-        "Thursday": "8 AM - 4 PM",
-        "Friday": "Closed",
-        "Saturday": "8 AM - 12 PM",
-        "Sunday": "Closed"
+    ],
+    "workingExperience": [
+      "Professor at North South University",
+      "Visiting Scholar at MIT",
+      "Research Associate at University of Cambridge"
+    ],
+    "services": [
+      "Physics Tutoring",
+      "Advanced Quantum Mechanics",
+      "Electromagnetism"
+    ],
+    "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
+    "professionImg": "https://example.com/teacher-profile.png",
+    "contactNumber": "+880123456787",
+    "timeTable": {
+      "Monday": "8 AM - 4 PM",
+      "Tuesday": "8 AM - 4 PM",
+      "Wednesday": "8 AM - 4 PM",
+      "Thursday": "8 AM - 4 PM",
+      "Friday": "Closed",
+      "Saturday": "8 AM - 12 PM",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 3,
+    "name": "Mr. Sazzad Hossain",
+    "email": "teacher.emily.johnson@example.com",
+    "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
+    "qualification": "LLB, LLM",
+    "category": "Lawyer",
+    "rating": 4.5,
+    "location": "Chittagong, Bangladesh",
+    "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
+    "education": [
+      { "degree": "LLB", "institution": "University of Chittagong" },
+      { "degree": "LLM", "institution": "University of Dhaka" },
+      {
+        "degree": "Diploma in International Law",
+        "institution": "Harvard Law School"
       }
-    },
-    {
-      "_id": 3,
-      "name": "Mr. Sazzad Hossain",
-      "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
-      "qualification": "LLB, LLM",
-      "category": "Lawyer",
-      "rating": 4.5,
-      "location": "Chittagong, Bangladesh",
-      "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
-      "education": [
-        { "degree": "LLB", "institution": "University of Chittagong" },
-        { "degree": "LLM", "institution": "University of Dhaka" },
-        { "degree": "Diploma in International Law", "institution": "Harvard Law School" }
-      ],
-      "workingExperience": [
-        "Senior Advocate at Chittagong High Court",
-        "Legal Advisor at ABC Corporation",
-        "Lecturer at University of Chittagong"
-      ],
-      "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
-      "rewards": ["Best Lawyer of the Year - 2020", "National Bar Association Honor - 2018"],
-      "professionImg": "https://example.com/lawyer-profile.png",
-      "contactNumber": "+880123456788",
-      "timeTable": {
-        "Monday": "10 AM - 6 PM",
-        "Tuesday": "10 AM - 6 PM",
-        "Wednesday": "10 AM - 6 PM",
-        "Thursday": "10 AM - 6 PM",
-        "Friday": "Closed",
-        "Saturday": "10 AM - 2 PM",
-        "Sunday": "10 AM - 6 PM"
+    ],
+    "workingExperience": [
+      "Senior Advocate at Chittagong High Court",
+      "Legal Advisor at ABC Corporation",
+      "Lecturer at University of Chittagong"
+    ],
+    "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
+    "rewards": [
+      "Best Lawyer of the Year - 2020",
+      "National Bar Association Honor - 2018"
+    ],
+    "professionImg": "https://example.com/lawyer-profile.png",
+    "contactNumber": "+880123456788",
+    "timeTable": {
+      "Monday": "10 AM - 6 PM",
+      "Tuesday": "10 AM - 6 PM",
+      "Wednesday": "10 AM - 6 PM",
+      "Thursday": "10 AM - 6 PM",
+      "Friday": "Closed",
+      "Saturday": "10 AM - 2 PM",
+      "Sunday": "10 AM - 6 PM"
+    }
+  },
+
+  {
+    "_id": 4,
+    "name": "Dr. Ayesha Rahman",
+    "email": "lawyer.benjamin.smith@example.com",
+    "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
+    "qualification": "MBBS, FCPS",
+    "category": "Doctor",
+    "rating": 4.8,
+    "location": "Dhaka, Bangladesh",
+    "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
+    "education": [
+      { "degree": "MBBS", "institution": "Dhaka Medical College" },
+      { "degree": "FCPS", "institution": "BSMMU" },
+      { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
+    ],
+    "workingExperience": [
+      "Senior Consultant at Square Hospital",
+      "Assistant Professor at Dhaka Medical College",
+      "Resident Doctor at United Hospital"
+    ],
+    "services": [
+      "General Health Check-up",
+      "Diabetes Management",
+      "Hypertension Management"
+    ],
+    "rewards": [
+      "Best Doctor Award - 2019",
+      "Excellence in Patient Care - 2021"
+    ],
+    "professionImg": "https://example.com/doctor-profile.png",
+    "contactNumber": "+880123456789",
+    "timeTable": {
+      "Monday": "9 AM - 5 PM",
+      "Tuesday": "9 AM - 5 PM",
+      "Wednesday": "2 PM - 8 PM",
+      "Thursday": "9 AM - 5 PM",
+      "Friday": "9 AM - 1 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 5,
+    "name": "Prof. Tamim Iqbal",
+    "email": "dr.amelia.brown@example.com",
+    "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
+    "qualification": "MSc, PhD",
+    "category": "Teacher",
+    "rating": 4.9,
+    "location": "Sylhet, Bangladesh",
+    "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
+    "education": [
+      { "degree": "BSc in Physics", "institution": "University of Dhaka" },
+      { "degree": "MSc in Physics", "institution": "North South University" },
+      {
+        "degree": "PhD in Theoretical Physics",
+        "institution": "University of Cambridge"
       }
-    },
-
-    {      "_id": 4,
-        "name": "Dr. Ayesha Rahman",
-        "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
-        "qualification": "MBBS, FCPS",
-        "category": "Doctor",
-        "rating": 4.8,
-        "location": "Dhaka, Bangladesh",
-        "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
-        "education": [
-          { "degree": "MBBS", "institution": "Dhaka Medical College" },
-          { "degree": "FCPS", "institution": "BSMMU" },
-          { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
-        ],
-        "workingExperience": [
-          "Senior Consultant at Square Hospital",
-          "Assistant Professor at Dhaka Medical College",
-          "Resident Doctor at United Hospital"
-        ],
-        "services": ["General Health Check-up", "Diabetes Management", "Hypertension Management"],
-        "rewards": ["Best Doctor Award - 2019", "Excellence in Patient Care - 2021"],
-        "professionImg": "https://example.com/doctor-profile.png",
-        "contactNumber": "+880123456789",
-        "timeTable": {
-          "Monday": "9 AM - 5 PM",
-          "Tuesday": "9 AM - 5 PM",
-          "Wednesday": "2 PM - 8 PM",
-          "Thursday": "9 AM - 5 PM",
-          "Friday": "9 AM - 1 PM",
-          "Saturday": "Closed",
-          "Sunday": "Closed"
-        }
-      },
+    ],
+    "workingExperience": [
+      "Professor at North South University",
+      "Visiting Scholar at MIT",
+      "Research Associate at University of Cambridge"
+    ],
+    "services": [
+      "Physics Tutoring",
+      "Advanced Quantum Mechanics",
+      "Electromagnetism"
+    ],
+    "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
+    "professionImg": "https://example.com/teacher-profile.png",
+    "contactNumber": "+880123456787",
+    "timeTable": {
+      "Monday": "8 AM - 4 PM",
+      "Tuesday": "8 AM - 4 PM",
+      "Wednesday": "8 AM - 4 PM",
+      "Thursday": "8 AM - 4 PM",
+      "Friday": "Closed",
+      "Saturday": "8 AM - 12 PM",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 6,
+    "name": "Mr. Sazzad Hossain",
+    "email": "teacher.linda.jones@example.com",
+    "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
+    "qualification": "LLB, LLM",
+    "category": "Lawyer",
+    "rating": 4.5,
+    "location": "Chittagong, Bangladesh",
+    "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
+    "education": [
+      { "degree": "LLB", "institution": "University of Chittagong" },
+      { "degree": "LLM", "institution": "University of Dhaka" },
       {
-        "_id": 5,
-        "name": "Prof. Tamim Iqbal",
-        "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
-        "qualification": "MSc, PhD",
-        "category": "Teacher",
-        "rating": 4.9,
-        "location": "Sylhet, Bangladesh",
-        "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
-        "education": [
-          { "degree": "BSc in Physics", "institution": "University of Dhaka" },
-          { "degree": "MSc in Physics", "institution": "North South University" },
-          { "degree": "PhD in Theoretical Physics", "institution": "University of Cambridge" }
-        ],
-        "workingExperience": [
-          "Professor at North South University",
-          "Visiting Scholar at MIT",
-          "Research Associate at University of Cambridge"
-        ],
-        "services": ["Physics Tutoring", "Advanced Quantum Mechanics", "Electromagnetism"],
-        "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
-        "professionImg": "https://example.com/teacher-profile.png",
-        "contactNumber": "+880123456787",
-        "timeTable": {
-          "Monday": "8 AM - 4 PM",
-          "Tuesday": "8 AM - 4 PM",
-          "Wednesday": "8 AM - 4 PM",
-          "Thursday": "8 AM - 4 PM",
-          "Friday": "Closed",
-          "Saturday": "8 AM - 12 PM",
-          "Sunday": "Closed"
-        }
-      },
-      {
-        "_id": 6,
-        "name": "Mr. Sazzad Hossain",
-        "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
-        "qualification": "LLB, LLM",
-        "category": "Lawyer",
-        "rating": 4.5,
-        "location": "Chittagong, Bangladesh",
-        "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
-        "education": [
-          { "degree": "LLB", "institution": "University of Chittagong" },
-          { "degree": "LLM", "institution": "University of Dhaka" },
-          { "degree": "Diploma in International Law", "institution": "Harvard Law School" }
-        ],
-        "workingExperience": [
-          "Senior Advocate at Chittagong High Court",
-          "Legal Advisor at ABC Corporation",
-          "Lecturer at University of Chittagong"
-        ],
-        "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
-        "rewards": ["Best Lawyer of the Year - 2020", "National Bar Association Honor - 2018"],
-        "professionImg": "https://example.com/lawyer-profile.png",
-        "contactNumber": "+880123456788",
-        "timeTable": {
-          "Monday": "10 AM - 6 PM",
-          "Tuesday": "10 AM - 6 PM",
-          "Wednesday": "10 AM - 6 PM",
-          "Thursday": "10 AM - 6 PM",
-          "Friday": "Closed",
-          "Saturday": "10 AM - 2 PM",
-          "Sunday": "10 AM - 6 PM"
-        }
-      },
-
-      {
-        "_id": 7,
-        "name": "Dr. Ayesha Rahman",
-        "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
-        "qualification": "MBBS, FCPS",
-        "category": "Doctor",
-        "rating": 4.8,
-        "location": "Dhaka, Bangladesh",
-        "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
-        "education": [
-          { "degree": "MBBS", "institution": "Dhaka Medical College" },
-          { "degree": "FCPS", "institution": "BSMMU" },
-          { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
-        ],
-        "workingExperience": [
-          "Senior Consultant at Square Hospital",
-          "Assistant Professor at Dhaka Medical College",
-          "Resident Doctor at United Hospital"
-        ],
-        "services": ["General Health Check-up", "Diabetes Management", "Hypertension Management"],
-        "rewards": ["Best Doctor Award - 2019", "Excellence in Patient Care - 2021"],
-        "professionImg": "https://example.com/doctor-profile.png",
-        "contactNumber": "+880123456789",
-        "timeTable": {
-          "Monday": "9 AM - 5 PM",
-          "Tuesday": "9 AM - 5 PM",
-          "Wednesday": "2 PM - 8 PM",
-          "Thursday": "9 AM - 5 PM",
-          "Friday": "9 AM - 1 PM",
-          "Saturday": "Closed",
-          "Sunday": "Closed"
-        }
-      },
-      {
-        "_id": 8,
-        "name": "Prof. Tamim Iqbal",
-        "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
-        "qualification": "MSc, PhD",
-        "category": "Teacher",
-        "rating": 4.9,
-        "location": "Sylhet, Bangladesh",
-        "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
-        "education": [
-          { "degree": "BSc in Physics", "institution": "University of Dhaka" },
-          { "degree": "MSc in Physics", "institution": "North South University" },
-          { "degree": "PhD in Theoretical Physics", "institution": "University of Cambridge" }
-        ],
-        "workingExperience": [
-          "Professor at North South University",
-          "Visiting Scholar at MIT",
-          "Research Associate at University of Cambridge"
-        ],
-        "services": ["Physics Tutoring", "Advanced Quantum Mechanics", "Electromagnetism"],
-        "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
-        "professionImg": "https://example.com/teacher-profile.png",
-        "contactNumber": "+880123456787",
-        "timeTable": {
-          "Monday": "8 AM - 4 PM",
-          "Tuesday": "8 AM - 4 PM",
-          "Wednesday": "8 AM - 4 PM",
-          "Thursday": "8 AM - 4 PM",
-          "Friday": "Closed",
-          "Saturday": "8 AM - 12 PM",
-          "Sunday": "Closed"
-        }
-      },
-      {
-        "_id": 9,
-        "name": "Mr. Sazzad Hossain",
-        "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
-        "qualification": "LLB, LLM",
-        "category": "Lawyer",
-        "rating": 4.5,
-        "location": "Chittagong, Bangladesh",
-        "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
-        "education": [
-          { "degree": "LLB", "institution": "University of Chittagong" },
-          { "degree": "LLM", "institution": "University of Dhaka" },
-          { "degree": "Diploma in International Law", "institution": "Harvard Law School" }
-        ],
-        "workingExperience": [
-          "Senior Advocate at Chittagong High Court",
-          "Legal Advisor at ABC Corporation",
-          "Lecturer at University of Chittagong"
-        ],
-        "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
-        "rewards": ["Best Lawyer of the Year - 2020", "National Bar Association Honor - 2018"],
-        "professionImg": "https://example.com/lawyer-profile.png",
-        "contactNumber": "+880123456788",
-        "timeTable": {
-          "Monday": "10 AM - 6 PM",
-          "Tuesday": "10 AM - 6 PM",
-          "Wednesday": "10 AM - 6 PM",
-          "Thursday": "10 AM - 6 PM",
-          "Friday": "Closed",
-          "Saturday": "10 AM - 2 PM",
-          "Sunday": "10 AM - 6 PM"
-        }
-      },
-
-      {
-        "_id": 10,
-
-        "name": "Dr. Ayesha Rahman",
-        "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
-        "qualification": "MBBS, FCPS",
-        "category": "Doctor",
-        "rating": 4.8,
-        "location": "Dhaka, Bangladesh",
-        "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
-        "education": [
-          { "degree": "MBBS", "institution": "Dhaka Medical College" },
-          { "degree": "FCPS", "institution": "BSMMU" },
-          { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
-        ],
-        "workingExperience": [
-          "Senior Consultant at Square Hospital",
-          "Assistant Professor at Dhaka Medical College",
-          "Resident Doctor at United Hospital"
-        ],
-        "services": ["General Health Check-up", "Diabetes Management", "Hypertension Management"],
-        "rewards": ["Best Doctor Award - 2019", "Excellence in Patient Care - 2021"],
-        "professionImg": "https://example.com/doctor-profile.png",
-        "contactNumber": "+880123456789",
-        "timeTable": {
-          "Monday": "9 AM - 5 PM",
-          "Tuesday": "9 AM - 5 PM",
-          "Wednesday": "2 PM - 8 PM",
-          "Thursday": "9 AM - 5 PM",
-          "Friday": "9 AM - 1 PM",
-          "Saturday": "Closed",
-          "Sunday": "Closed"
-        }
-      },
-      {
-        "_id": 11,
-        "name": "Prof. Tamim Iqbal",
-        "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
-        "qualification": "MSc, PhD",
-        "category": "Teacher",
-        "rating": 4.9,
-        "location": "Sylhet, Bangladesh",
-        "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
-        "education": [
-          { "degree": "BSc in Physics", "institution": "University of Dhaka" },
-          { "degree": "MSc in Physics", "institution": "North South University" },
-          { "degree": "PhD in Theoretical Physics", "institution": "University of Cambridge" }
-        ],
-        "workingExperience": [
-          "Professor at North South University",
-          "Visiting Scholar at MIT",
-          "Research Associate at University of Cambridge"
-        ],
-        "services": ["Physics Tutoring", "Advanced Quantum Mechanics", "Electromagnetism"],
-        "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
-        "professionImg": "https://example.com/teacher-profile.png",
-        "contactNumber": "+880123456787",
-        "timeTable": {
-          "Monday": "8 AM - 4 PM",
-          "Tuesday": "8 AM - 4 PM",
-          "Wednesday": "8 AM - 4 PM",
-          "Thursday": "8 AM - 4 PM",
-          "Friday": "Closed",
-          "Saturday": "8 AM - 12 PM",
-          "Sunday": "Closed"
-        }
-      },
-      {
-        "_id": 12,
-        "name": "Mr. Sazzad Hossain",
-        "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
-        "qualification": "LLB, LLM",
-        "category": "Lawyer",
-        "rating": 4.5,
-        "location": "Chittagong, Bangladesh",
-        "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
-        "education": [
-          { "degree": "LLB", "institution": "University of Chittagong" },
-          { "degree": "LLM", "institution": "University of Dhaka" },
-          { "degree": "Diploma in International Law", "institution": "Harvard Law School" }
-        ],
-        "workingExperience": [
-          "Senior Advocate at Chittagong High Court",
-          "Legal Advisor at ABC Corporation",
-          "Lecturer at University of Chittagong"
-        ],
-        "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
-        "rewards": ["Best Lawyer of the Year - 2020", "National Bar Association Honor - 2018"],
-        "professionImg": "https://example.com/lawyer-profile.png",
-        "contactNumber": "+880123456788",
-        "timeTable": {
-          "Monday": "10 AM - 6 PM",
-          "Tuesday": "10 AM - 6 PM",
-          "Wednesday": "10 AM - 6 PM",
-          "Thursday": "10 AM - 6 PM",
-          "Friday": "Closed",
-          "Saturday": "10 AM - 2 PM",
-          "Sunday": "10 AM - 6 PM"
-        }
+        "degree": "Diploma in International Law",
+        "institution": "Harvard Law School"
       }
-  ]
+    ],
+    "workingExperience": [
+      "Senior Advocate at Chittagong High Court",
+      "Legal Advisor at ABC Corporation",
+      "Lecturer at University of Chittagong"
+    ],
+    "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
+    "rewards": [
+      "Best Lawyer of the Year - 2020",
+      "National Bar Association Honor - 2018"
+    ],
+    "professionImg": "https://example.com/lawyer-profile.png",
+    "contactNumber": "+880123456788",
+    "timeTable": {
+      "Monday": "10 AM - 6 PM",
+      "Tuesday": "10 AM - 6 PM",
+      "Wednesday": "10 AM - 6 PM",
+      "Thursday": "10 AM - 6 PM",
+      "Friday": "Closed",
+      "Saturday": "10 AM - 2 PM",
+      "Sunday": "10 AM - 6 PM"
+    }
+  },
+
+  {
+    "_id": 7,
+    "name": "Dr. Ayesha Rahman",
+    "email": "lawyer.sophia.wilson@example.com",
+    "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
+    "qualification": "MBBS, FCPS",
+    "category": "Doctor",
+    "rating": 4.8,
+    "location": "Dhaka, Bangladesh",
+    "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
+    "education": [
+      { "degree": "MBBS", "institution": "Dhaka Medical College" },
+      { "degree": "FCPS", "institution": "BSMMU" },
+      { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
+    ],
+    "workingExperience": [
+      "Senior Consultant at Square Hospital",
+      "Assistant Professor at Dhaka Medical College",
+      "Resident Doctor at United Hospital"
+    ],
+    "services": [
+      "General Health Check-up",
+      "Diabetes Management",
+      "Hypertension Management"
+    ],
+    "rewards": [
+      "Best Doctor Award - 2019",
+      "Excellence in Patient Care - 2021"
+    ],
+    "professionImg": "https://example.com/doctor-profile.png",
+    "contactNumber": "+880123456789",
+    "timeTable": {
+      "Monday": "9 AM - 5 PM",
+      "Tuesday": "9 AM - 5 PM",
+      "Wednesday": "2 PM - 8 PM",
+      "Thursday": "9 AM - 5 PM",
+      "Friday": "9 AM - 1 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 8,
+    "name": "Prof. Tamim Iqbal",
+    "email": "dr.mohammed.ali@example.com",
+    "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
+    "qualification": "MSc, PhD",
+    "category": "Teacher",
+    "rating": 4.9,
+    "location": "Sylhet, Bangladesh",
+    "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
+    "education": [
+      { "degree": "BSc in Physics", "institution": "University of Dhaka" },
+      { "degree": "MSc in Physics", "institution": "North South University" },
+      {
+        "degree": "PhD in Theoretical Physics",
+        "institution": "University of Cambridge"
+      }
+    ],
+    "workingExperience": [
+      "Professor at North South University",
+      "Visiting Scholar at MIT",
+      "Research Associate at University of Cambridge"
+    ],
+    "services": [
+      "Physics Tutoring",
+      "Advanced Quantum Mechanics",
+      "Electromagnetism"
+    ],
+    "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
+    "professionImg": "https://example.com/teacher-profile.png",
+    "contactNumber": "+880123456787",
+    "timeTable": {
+      "Monday": "8 AM - 4 PM",
+      "Tuesday": "8 AM - 4 PM",
+      "Wednesday": "8 AM - 4 PM",
+      "Thursday": "8 AM - 4 PM",
+      "Friday": "Closed",
+      "Saturday": "8 AM - 12 PM",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 9,
+    "name": "Mr. Sazzad Hossain",
+    "email": "teacher.susan.khan@example.com",
+    "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
+    "qualification": "LLB, LLM",
+    "category": "Lawyer",
+    "rating": 4.5,
+    "location": "Chittagong, Bangladesh",
+    "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
+    "education": [
+      { "degree": "LLB", "institution": "University of Chittagong" },
+      { "degree": "LLM", "institution": "University of Dhaka" },
+      {
+        "degree": "Diploma in International Law",
+        "institution": "Harvard Law School"
+      }
+    ],
+    "workingExperience": [
+      "Senior Advocate at Chittagong High Court",
+      "Legal Advisor at ABC Corporation",
+      "Lecturer at University of Chittagong"
+    ],
+    "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
+    "rewards": [
+      "Best Lawyer of the Year - 2020",
+      "National Bar Association Honor - 2018"
+    ],
+    "professionImg": "https://example.com/lawyer-profile.png",
+    "contactNumber": "+880123456788",
+    "timeTable": {
+      "Monday": "10 AM - 6 PM",
+      "Tuesday": "10 AM - 6 PM",
+      "Wednesday": "10 AM - 6 PM",
+      "Thursday": "10 AM - 6 PM",
+      "Friday": "Closed",
+      "Saturday": "10 AM - 2 PM",
+      "Sunday": "10 AM - 6 PM"
+    }
+  },
+
+  {
+    "_id": 10,
+
+    "name": "Dr. Ayesha Rahman",
+    "userImg": "https://i.ibb.co.com/9g0j1HK/974.jpg",
+    "qualification": "MBBS, FCPS",
+    "category": "Doctor",
+    "rating": 4.8,
+    "location": "Dhaka, Bangladesh",
+    "about": "Dr. Ayesha Rahman is a highly skilled and experienced medical professional specializing in internal medicine. She has over 10 years of experience in diagnosing and treating complex health conditions, providing compassionate care to patients. Her areas of expertise include chronic disease management, preventive health, and patient counseling.",
+    "education": [
+      { "degree": "MBBS", "institution": "Dhaka Medical College" },
+      { "degree": "FCPS", "institution": "BSMMU" },
+      { "degree": "MRCP", "institution": "Royal College of Physicians, UK" }
+    ],
+    "workingExperience": [
+      "Senior Consultant at Square Hospital",
+      "Assistant Professor at Dhaka Medical College",
+      "Resident Doctor at United Hospital"
+    ],
+    "services": [
+      "General Health Check-up",
+      "Diabetes Management",
+      "Hypertension Management"
+    ],
+    "rewards": [
+      "Best Doctor Award - 2019",
+      "Excellence in Patient Care - 2021"
+    ],
+    "professionImg": "https://example.com/doctor-profile.png",
+    "contactNumber": "+880123456789",
+    "timeTable": {
+      "Monday": "9 AM - 5 PM",
+      "Tuesday": "9 AM - 5 PM",
+      "Wednesday": "2 PM - 8 PM",
+      "Thursday": "9 AM - 5 PM",
+      "Friday": "9 AM - 1 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 11,
+    "name": "Prof. Tamim Iqbal",
+    "email": "lawyer.jason.miller@example.com",
+    "userImg": "https://i.ibb.co.com/G5gmGng/106344.jpg",
+    "qualification": "MSc, PhD",
+    "category": "Teacher",
+    "rating": 4.9,
+    "location": "Sylhet, Bangladesh",
+    "about": "Prof. Tamim Iqbal is a dedicated educator and researcher in the field of physics. With over 20 years of teaching experience, he has mentored hundreds of students and published several research papers in international journals. His teaching methodology focuses on making complex topics easily understandable.",
+    "education": [
+      { "degree": "BSc in Physics", "institution": "University of Dhaka" },
+      { "degree": "MSc in Physics", "institution": "North South University" },
+      {
+        "degree": "PhD in Theoretical Physics",
+        "institution": "University of Cambridge"
+      }
+    ],
+    "workingExperience": [
+      "Professor at North South University",
+      "Visiting Scholar at MIT",
+      "Research Associate at University of Cambridge"
+    ],
+    "services": [
+      "Physics Tutoring",
+      "Advanced Quantum Mechanics",
+      "Electromagnetism"
+    ],
+    "rewards": ["Best Teacher Award - 2017", "Excellence in Research - 2015"],
+    "professionImg": "https://example.com/teacher-profile.png",
+    "contactNumber": "+880123456787",
+    "timeTable": {
+      "Monday": "8 AM - 4 PM",
+      "Tuesday": "8 AM - 4 PM",
+      "Wednesday": "8 AM - 4 PM",
+      "Thursday": "8 AM - 4 PM",
+      "Friday": "Closed",
+      "Saturday": "8 AM - 12 PM",
+      "Sunday": "Closed"
+    }
+  },
+  {
+    "_id": 12,
+    "name": "Mr. Sazzad Hossain",
+    "email": "dr.ayesha.rahman@example.com",
+    "userImg": "https://i.ibb.co.com/23TrpJP/2147898602.jpg",
+    "qualification": "LLB, LLM",
+    "category": "Lawyer",
+    "rating": 4.5,
+    "location": "Chittagong, Bangladesh",
+    "about": "Mr. Sazzad Hossain is a renowned legal expert with over 15 years of experience in criminal and civil law. He has successfully handled numerous high-profile cases and is known for his strategic approach in the courtroom. He is passionate about providing justice and offering legal guidance to those in need.",
+    "education": [
+      { "degree": "LLB", "institution": "University of Chittagong" },
+      { "degree": "LLM", "institution": "University of Dhaka" },
+      {
+        "degree": "Diploma in International Law",
+        "institution": "Harvard Law School"
+      }
+    ],
+    "workingExperience": [
+      "Senior Advocate at Chittagong High Court",
+      "Legal Advisor at ABC Corporation",
+      "Lecturer at University of Chittagong"
+    ],
+    "services": ["Criminal Defense", "Civil Litigation", "Corporate Law"],
+    "rewards": [
+      "Best Lawyer of the Year - 2020",
+      "National Bar Association Honor - 2018"
+    ],
+    "professionImg": "https://example.com/lawyer-profile.png",
+    "contactNumber": "+880123456788",
+    "timeTable": {
+      "Monday": "10 AM - 6 PM",
+      "Tuesday": "10 AM - 6 PM",
+      "Wednesday": "10 AM - 6 PM",
+      "Thursday": "10 AM - 6 PM",
+      "Friday": "Closed",
+      "Saturday": "10 AM - 2 PM",
+      "Sunday": "10 AM - 6 PM"
+    }
+  }
+]
