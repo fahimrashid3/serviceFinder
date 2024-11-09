@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useUsers from "../../hooks/useUsers";
 
 // TODO: show all button not working
+// TODO: load those data which are needed using api filter
 
 const LargeProfileCart = ({ category }) => {
   const navigate = useNavigate();
