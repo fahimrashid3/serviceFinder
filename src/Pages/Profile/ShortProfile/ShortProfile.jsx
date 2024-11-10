@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import { useEffect, useState } from "react";
 import SectionBanner from "../../../Compunents/SectionBanner/SectionBanner";
@@ -70,9 +70,14 @@ const ShortProfile = () => {
               <span> {item.institution}</span>
             </p>
           ))}
-          <button className="btn btn-success btn-outline">
+          <Link
+            to={`/fullProfile/${_id}`}
+            user={user}
+            category={category}
+            className="btn btn-success btn-outline"
+          >
             View Full Profile
-          </button>
+          </Link>
         </div>
       </div>
     </div>
