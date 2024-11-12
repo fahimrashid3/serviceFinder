@@ -128,6 +128,7 @@ const Registration = () => {
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
+              {/*TODO: add show password using useState change */}
               <input
                 type="email"
                 placeholder="Email"

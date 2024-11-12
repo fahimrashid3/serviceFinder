@@ -36,7 +36,7 @@ const ShortProfile = () => {
     );
 
   return (
-    <div className="-mt-20  dark:bg-dark-700 text-dark-900 dark:text-white">
+    <div className="-mt-20 mb-20 dark:bg-dark-700 text-dark-900 dark:text-white">
       <SectionBanner
         img={category.serviceImg}
         title={category.serviceProviderType}
@@ -47,7 +47,7 @@ const ShortProfile = () => {
       ></SectionTitle>
       <div className="flex gap-10">
         <div className="flex-1">
-          <img className="rounded-lg" src={user.userImg} alt="" />
+          <img className="rounded-lg " src={user.userImg} alt="" />
         </div>
         <div className="flex-1 lg:space-y-5">
           <p className="font-semibold lg:text-3xl md:text-2xl text-xl">
@@ -63,13 +63,14 @@ const ShortProfile = () => {
             src={category.serviceImg}
             alt=""
           />
-          {user.education.map((item, index) => (
+          {/* {user.education.map((item, index) => (
             <p key={index} className="font-bold">
               <span className="min-w-24"> {item.degree}</span>{" "}
               <span className="font-normal">from</span>
               <span> {item.institution}</span>
             </p>
-          ))}
+          ))} */}
+          <p className="text-lg">{user.about}</p>
           <Link
             to={`/fullProfile/${_id}`}
             user={user}

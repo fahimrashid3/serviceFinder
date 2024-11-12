@@ -1,12 +1,29 @@
 import { Helmet } from "react-helmet";
+import SectionBanner from "../../../Compunents/SectionBanner/SectionBanner";
+import SectionTitle from "../../../Compunents/SectionTitle/SectionTitle";
+import Information from "../Information/Information";
+import ContactForm from "../ContactForm/ContactForm";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="-mt-20">
       <Helmet>
         <title>ServiceFinder | Contact Us</title>
       </Helmet>
-      <h1>This is contact page</h1>
+      <SectionBanner
+        img={"https://i.ibb.co.com/gVxQNWv/contact-Us.jpg"}
+        title="Contact Us"
+      ></SectionBanner>
+      <SectionTitle
+        subHeading={"Visit Us"}
+        heading={"Our Location"}
+      ></SectionTitle>
+      <Information></Information>
+      <SectionTitle
+        heading="Contact Form"
+        subHeading={"Sent Us a Message"}
+      ></SectionTitle>
+      <ContactForm></ContactForm>
     </div>
   );
 };

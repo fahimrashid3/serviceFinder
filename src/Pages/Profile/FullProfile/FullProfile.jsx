@@ -6,6 +6,7 @@ const FullProfile = ({ user, category }) => {
       </div>
     );
 
+  console.log(user, category);
   return (
     <div>
       <p>{user.name}</p>

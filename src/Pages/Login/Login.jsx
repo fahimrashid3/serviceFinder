@@ -63,6 +63,7 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
+              {/*TODO: add show password using useState change */}
               <input
                 type="password"
                 placeholder="password"

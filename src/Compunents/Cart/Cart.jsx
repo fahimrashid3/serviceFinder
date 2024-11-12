@@ -12,9 +12,9 @@ const Cart = ({ user }) => {
         <div className="card-body">
           <p className="text-green-500">Available</p>
           <h2 className="card-title">{name}</h2>
-          <p>{qualification}</p>
+          <p className="text-lg">{qualification}</p>
           <div className="flex items-center card-actions justify-end">
-            <p>{category}</p>
+            <p className="text-lg">{category}</p>
             <Link
               to={`/shortProfile/${_id}`}
               className="btn btn-success btn-outline"
