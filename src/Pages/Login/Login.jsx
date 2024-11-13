@@ -1,6 +1,6 @@
 import loginBg from "../../assets/others/authentication.png";
 import loginImg from "../../assets/others/authentication2.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // for captcha
 import {
@@ -13,9 +13,17 @@ import {
 import SocialLogin from "../../Compunents/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
+  const { signIn } = useAuth();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -28,6 +36,36 @@ const Login = () => {
     } else {
       setDisabled(true);
     }
+  };
+
+  const handelLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    signIn(email, password)
+      .then((userCredential) => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Logged in successfully ",
+          showConfirmButton: false,
+          timer: 1000,
+        });
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate(from, { replace: true });
+        scrollTo(0, 0);
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        setErrorMessage(errorMessage);
+        console.log(errorCode, errorMessage);
+      });
   };
 
   return (
@@ -43,7 +81,7 @@ const Login = () => {
           <img src={loginImg} alt="" />
         </div>
         <div className="card flex-1 shrink-0">
-          <form className="card-body">
+          <form onSubmit={handelLogin} className="card-body">
             <div className=" font-bold text-center lg:text-5xl md:text-4xl text-3xl md:mb-10 mb-5 text-dark-900 dark:text-white">
               Sign In
             </div>
@@ -77,6 +115,9 @@ const Login = () => {
                 </a>
               </label>
             </div>
+            <div>
+              <p className="text-red-500">{errorMessage}</p>
+            </div>
             <div className="form-control space-y-2">
               <LoadCanvasTemplate />
               <input
@@ -86,12 +127,6 @@ const Login = () => {
                 name="captcha"
                 className="input input-bordered"
               />
-              {/* <button
-                type="reset"
-                className="btn btn-outline btn-sm btn-warning mt-3"
-              >
-                validate
-              </button> */}
             </div>
 
             <div className="form-control mt-6">
@@ -106,7 +141,7 @@ const Login = () => {
           </form>
           <div className="space-y-5">
             <p className="text-[#D1A054] text-lg text-center">
-              New here ?{" "}
+              New here ?
               <span className="font-semibold">
                 <Link to="/registration">Create a New Account</Link>
               </span>

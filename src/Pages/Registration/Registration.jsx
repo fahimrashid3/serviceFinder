@@ -15,6 +15,7 @@ import Swal from "sweetalert2";
 const Registration = () => {
   const axiosPublic = useAxiosPublic();
   const { createUser, updateUserProfile } = useAuth();
+  // react hook form
   const {
     register,
     handleSubmit,
@@ -109,7 +110,9 @@ const Registration = () => {
                 {...register("name", { required: true })}
                 className="input input-bordered"
               />
-              {errors.name && <span>This field is required</span>}
+              {errors.name && (
+                <span className="text-red-500">Name is required</span>
+              )}
             </div>
             {/* TODO: use photo hosting to upload photo */}
             <div className="form-control">
@@ -122,7 +125,9 @@ const Registration = () => {
                 {...register("PhotoUrl", { required: true })}
                 className="input input-bordered"
               />
-              {errors.photoUrl && <span>Photo Url is required</span>}
+              {errors.photoUrl && (
+                <span className="text-red-500">Photo Url is required</span>
+              )}
             </div>
             <div className="form-control">
               <label className="label">
@@ -135,7 +140,9 @@ const Registration = () => {
                 {...register("email", { required: true })}
                 className="input input-bordered"
               />
-              {errors.email && <span>This field is required</span>}
+              {errors.email && (
+                <span className="text-red-500">This field is required</span>
+              )}
             </div>
             <div className="form-control">
               <label className="label">
@@ -152,15 +159,21 @@ const Registration = () => {
                   pattern: /(?=.*[A-Z])(?=.*[!@#$&.*])(?=.*[0-9])(?=.*[a-z])/,
                 })}
               />
-              {/* {errors.password && <span>Password required</span>} */}
+              {errors.password && (
+                <span className="text-red-500">Password required</span>
+              )}
               {errors.password?.type === "minLength" && (
-                <span>Password must be 6 to 16 characters required</span>
+                <span className="text-red-500">
+                  Password must be up to 6 characters
+                </span>
               )}
               {errors.password?.type === "maxLength" && (
-                <span>Password must be 6 to 16 characters required</span>
+                <span className="text-red-500">
+                  Password must be less then 16 characters
+                </span>
               )}
               {errors.password?.type === "pattern" && (
-                <span>
+                <span className="text-red-500">
                   Password must have one uppercase one lowercase one number and
                   one special characters
                 </span>
@@ -181,14 +194,18 @@ const Registration = () => {
                   pattern: /(?=.*[A-Z])(?=.*[!@#$&.*])(?=.*[0-9])(?=.*[a-z])/,
                 })}
               />
-              {errors.confirmPassword?.type === "minLength" && (
-                <span>Password must be 6 to 16 characters required</span>
+              {errors.password?.type === "minLength" && (
+                <span className="text-red-500">
+                  Password must be up to 6 characters
+                </span>
               )}
-              {errors.confirmPassword?.type === "maxLength" && (
-                <span>Password must be 6 to 16 characters required</span>
+              {errors.password?.type === "maxLength" && (
+                <span className="text-red-500">
+                  Password must be less then 16 characters
+                </span>
               )}
-              {errors.confirmPassword?.type === "pattern" && (
-                <span>
+              {errors.password?.type === "pattern" && (
+                <span className="text-red-500">
                   Password must have one uppercase one lowercase one number and
                   one special characters
                 </span>

@@ -1,13 +1,23 @@
 import { CgProfile } from "react-icons/cg";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const NavBar = () => {
   const { user, logOut } = useAuth();
   const handelLogout = () => {
-    logOut();
+    logOut()
+      .then(() => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "LogOut Successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => console.log(error));
   };
-  console.log(user);
   const links = (
     <>
       <li>
@@ -52,7 +62,9 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="
+            menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow
+            bg-dark-900 dark:bg-dark-200 text-white dark:text-dark-900"
           >
             {links}
           </ul>
@@ -84,9 +96,9 @@ const NavBar = () => {
 
             <li>
               {user ? (
-                <Link to="/login">Login</Link>
-              ) : (
                 <p onClick={handelLogout}>logout</p>
+              ) : (
+                <Link to="/login">Login</Link>
               )}
             </li>
           </ul>
