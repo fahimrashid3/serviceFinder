@@ -21,9 +21,11 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const { signIn } = useAuth();
 
+  // privet route navigate
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
+  console.log(from);
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -56,6 +58,8 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         console.log(user);
+
+        // privet route navigate when user available
         navigate(from, { replace: true });
         scrollTo(0, 0);
         // ...

@@ -1,20 +1,23 @@
 import loginImg from "../../assets/others/authentication2.png";
 import loginBg from "../../assets/others/authentication.png";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-// import { useContext } from "react";
-// import { AuthContext } from "../../Providers/AuthProvider/AuthProvider";
-// import Swal from "sweetalert2";
-// import useAxiosPublic from "../../hooks/useAxiosPublic";
 import SocialLogin from "../../Compunents/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet";
-import useAxiosPublic from "../../hooks/useAxiosPublic";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import { useState } from "react";
 
 const Registration = () => {
-  const axiosPublic = useAxiosPublic();
+  const [errorMessage, setErrorMessage] = useState("");
   const { createUser, updateUserProfile } = useAuth();
+
+  // privet route navigate
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  console.log(from);
+
   // react hook form
   const {
     register,
@@ -23,7 +26,6 @@ const Registration = () => {
     // watch,
     formState: { errors },
   } = useForm();
-  //   const navigate = useNavigate();
 
   const onSubmit = (data) => {
     const { name, email, password, confirmPassword, photoUrl } = data;
@@ -44,28 +46,17 @@ const Registration = () => {
               };
               // create user entry in database
 
-              axiosPublic.post("/users", userInfo).then((res) => {
-                if (res.data.insertedId) {
-                  Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "Your work has been saved",
-                    showConfirmButton: false,
-                    timer: 1000,
-                  });
-                  Navigate("/");
-
-                  // ...
-                  reset;
-                  // ...
-                }
-              });
+              console.log(userInfo);
             })
             .catch((error) => {
               // An error occurred
               console.error(error);
               // ...
             });
+          reset();
+
+          // privet route navigate when user available
+          navigate(from, { replace: true });
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -80,6 +71,8 @@ const Registration = () => {
 
           // ..
         });
+    } else {
+      setErrorMessage("password and confirm password should be same");
     }
   };
 
@@ -210,6 +203,9 @@ const Registration = () => {
                   one special characters
                 </span>
               )}
+            </div>
+            <div>
+              <p>{errorMessage}</p>
             </div>
             <div className="form-control mt-6">
               <button

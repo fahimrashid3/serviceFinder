@@ -12,6 +12,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 import AllProviders from "../Pages/AllProviders/AllProviders/AllProviders";
 import FullProfile from "../Pages/Profile/FullProfile/FullProfile";
 import ShortProfile from "../Pages/Profile/ShortProfile/ShortProfile";
+import PrivetRoute from "./PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/appointment",
-        element: <Appointment />,
+        element: (
+          <PrivetRoute>
+            <Appointment />
+          </PrivetRoute>
+        ),
       },
       {
         path: "/dashboard",
