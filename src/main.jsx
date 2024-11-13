@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>
       <AuthProvider>
-        <div className="max-w-screen-2xl mx-auto lg:px-10 md:px-8 px-4">
+        <div className="max-w-screen-2xl mx-auto">
           <RouterProvider router={router} />
         </div>
       </AuthProvider>

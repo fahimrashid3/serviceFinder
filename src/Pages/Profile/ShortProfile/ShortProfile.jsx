@@ -53,8 +53,8 @@ const ShortProfile = () => {
           <p className="font-semibold lg:text-3xl md:text-2xl text-xl">
             Our Services
           </p>
-          <div className=" rounded-lg p-5 bg-slate-200">
-            <p>{user.Name}</p>
+          <div className=" rounded-lg p-5 bg-dark-200 dark:bg-dark-700">
+            <p>{user.name}</p>
             <p>{user.qualification}</p>
             <p>{user.location}</p>
           </div>

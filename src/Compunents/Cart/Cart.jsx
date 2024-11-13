@@ -4,7 +4,11 @@ const Cart = ({ user }) => {
   const { _id, userImg, category, name, qualification } = user;
 
   return (
-    <div className="overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500">
+    <div
+      className="
+    overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 border rounded-xl
+     border-dark-700 dark:border-dark-200 "
+    >
       <div className="card card-compact bg-base-100 shadow-xl">
         <figure>
           <img src={userImg} alt={category} />

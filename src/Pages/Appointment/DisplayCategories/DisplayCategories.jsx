@@ -7,7 +7,7 @@ const DisplayCategories = ({ category }) => {
       {category?.categories?.length ? (
         category.categories.map((item, index) => (
           <div
-            className={`border-2 hover:border-[${colorPrimary}] border-[${colorSecondary}]  p-4 rounded-lg cursor-pointer hover:bg-[${colorPrimary}] transition-all duration-200`}
+            className={`border hover:border-[${colorPrimary}] border-[${colorSecondary}]  p-4 rounded-lg cursor-pointer hover:bg-[${colorPrimary}] transition-all duration-200`}
             key={index}
           >
             <p className="text-2xl font-bold px-2 text-center">{item.name}</p>

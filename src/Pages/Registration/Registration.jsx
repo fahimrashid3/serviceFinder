@@ -116,7 +116,7 @@ const Registration = () => {
                 type="text"
                 placeholder="photoUrl"
                 {...register("PhotoUrl", { required: true })}
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
               />
               {errors.photoUrl && (
                 <span className="text-red-500">Photo Url is required</span>
@@ -131,7 +131,7 @@ const Registration = () => {
                 type="email"
                 placeholder="Email"
                 {...register("email", { required: true })}
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
               />
               {errors.email && (
                 <span className="text-red-500">This field is required</span>
@@ -144,7 +144,7 @@ const Registration = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
                 {...register("password", {
                   required: true,
                   minLength: 6,
@@ -179,7 +179,7 @@ const Registration = () => {
               <input
                 type="password"
                 placeholder="Confirm Password"
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
                 {...register("confirmPassword", {
                   required: true,
                   minLength: 6,

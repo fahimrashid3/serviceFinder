@@ -74,7 +74,7 @@ const Login = () => {
 
   return (
     <div
-      className="hero  min-h-screen "
+      className="hero min-h-screen "
       style={{ backgroundImage: `url(${loginBg})` }}
     >
       <Helmet>
@@ -97,7 +97,7 @@ const Login = () => {
                 type="email"
                 placeholder="email"
                 name="email"
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
                 required
               />
             </div>
@@ -110,9 +110,10 @@ const Login = () => {
                 type="password"
                 placeholder="password"
                 name="password"
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
                 required
               />
+              {/* TODO: implement forget password using firebase  */}
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
                   Forgot password?
@@ -129,7 +130,7 @@ const Login = () => {
                 type="text"
                 placeholder="type the above characters "
                 name="captcha"
-                className="input input-bordered"
+                className="input input-bordered bg-white text-dark-900"
               />
             </div>
 
