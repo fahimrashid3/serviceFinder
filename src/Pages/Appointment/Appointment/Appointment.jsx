@@ -2,12 +2,21 @@ import { Helmet } from "react-helmet";
 import SectionBanner from "../../../Compunents/SectionBanner/SectionBanner";
 import SectionTitle from "../../../Compunents/SectionTitle/SectionTitle";
 import useCategories from "../../../hooks/useCategories";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DisplayCategories from "../displayCategories/displayCategories";
+import { useLocation } from "react-router-dom";
 
 const Appointment = () => {
   const [categories] = useCategories();
   const [category, setCategory] = useState([]);
+  const location = useLocation();
+  const { bookingBtnCategory } = location.state || "Teacher";
+  console.log(bookingBtnCategory);
+  useEffect(() => {
+    if (bookingBtnCategory) {
+      setCategory(bookingBtnCategory);
+    }
+  }, [bookingBtnCategory]);
 
   return (
     <div className="-mt-20 min-h-screen">

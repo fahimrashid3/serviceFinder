@@ -2,6 +2,9 @@ import { CgProfile } from "react-icons/cg";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import { FaRegCalendarCheck } from "react-icons/fa";
+import { FiLogIn } from "react-icons/fi";
+import { CiLogout } from "react-icons/ci";
 
 const NavBar = () => {
   const { user, logOut } = useAuth();
@@ -91,14 +94,37 @@ const NavBar = () => {
             className="dropdown-content menu bg-dark-900 text-white dark:bg-gray-400 dark:text-dark-900  rounded-box z-[1] w-52 p-2 shadow"
           >
             <li>
-              <Link>Profile</Link>
+              <Link to="/userProfile">
+                <span className="text-2xl">
+                  <CgProfile />
+                </span>{" "}
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link to="/myAppointment">
+                <span className="text-2xl">
+                  <FaRegCalendarCheck />
+                </span>{" "}
+                My Appointment
+              </Link>
             </li>
 
             <li>
               {user ? (
-                <p onClick={handelLogout}>logout</p>
+                <p onClick={handelLogout}>
+                  <span className="text-2xl font-semibold">
+                    <CiLogout />{" "}
+                  </span>
+                  logout
+                </p>
               ) : (
-                <Link to="/login">Login</Link>
+                <Link to="/login">
+                  <span className="text-2xl">
+                    <FiLogIn />{" "}
+                  </span>
+                  Login
+                </Link>
               )}
             </li>
           </ul>

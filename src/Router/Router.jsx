@@ -13,6 +13,8 @@ import AllProviders from "../Pages/AllProviders/AllProviders/AllProviders";
 import FullProfile from "../Pages/Profile/FullProfile/FullProfile";
 import ShortProfile from "../Pages/Profile/ShortProfile/ShortProfile";
 import PrivetRoute from "./PrivetRoute";
+import MyAppointment from "../Pages/MyAppointment/MyAppointment/MyAppointment";
+import UserProfile from "../Pages/Profile/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +69,14 @@ const router = createBrowserRouter([
       {
         path: "/fullProfile/:_id",
         element: <FullProfile />,
+      },
+      {
+        path: "/myAppointment",
+        element: <MyAppointment />,
+      },
+      {
+        path: "/userProfile",
+        element: <UserProfile />,
       },
     ],
   },
